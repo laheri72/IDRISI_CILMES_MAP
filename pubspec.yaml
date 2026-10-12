@@ -1,0 +1,31 @@
+name: idrisi_map_app
+description: "Al-Idrisi High-Resolution Interactive Map Application"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_map: ^8.3.2
+  flutter_riverpod: ^2.5.1
+  latlong2: ^0.10.1
+  shared_preferences: ^2.5.5
+  url_launcher: ^6.2.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/maps/previews/
+    - assets/maps/tiles/ar/
+    - assets/maps/tiles/en/
+    - assets/data/cities.json
+    - assets/data/climes.json

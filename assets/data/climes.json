@@ -1,0 +1,37 @@
+[
+  {
+    "number": 1,
+    "name": "al-Iqlīm al-Awwal",
+    "arabicName": "الإقليم الأول",
+    "bounds": "Latitudes ~12°45′ N to ~20°30′ N (Longest daylight: 12¾h to 13¼h)",
+    "description": "Anchors the Indian Ocean Monsoon Maritime Silk & Frankincense Route and the Trans-Saharan / Trans-Nile Caravan Corridors. Features trade in frankincense, spices, teak, gold, and ivory connecting Nubia, Abyssinia, Dhofar, Makran, and Konkan India."
+  },
+  {
+    "number": 2,
+    "name": "al-Iqlīm al-Thānī",
+    "arabicName": "الإقليم الثاني",
+    "bounds": "Latitudes ~20°30′ N to ~27°30′ N (Centered around the Tropic of Cancer ~23.5° N)",
+    "description": "Encompasses the holy sanctuaries of Arabia (Mecca, Medina), central Arabian agricultural oases (Yamama), Upper Egypt (Akhmim), lower Indus Valley ports (Debal), and western Indian coastal hubs (Ghogha)."
+  },
+  {
+    "number": 3,
+    "name": "al-Iqlīm al-Thālith",
+    "arabicName": "الإقليم الثالث",
+    "bounds": "Latitudes ~27°30′ N to ~33°30′ N",
+    "description": "Encompasses the historic Mediterranean and Middle Eastern capitals (Cairo/Fustat, Alexandria, Jerusalem, Damascus, Kufa, Basra, Shiraz) extending through Sistan into Afghan foothill hubs (Kandahar, Kabul) and maritime China (Guangzhou)."
+  },
+  {
+    "number": 4,
+    "name": "al-Iqlīm al-Rābiʿ",
+    "arabicName": "الإقليم الرابع",
+    "bounds": "Latitudes ~33°30′ N to ~39°00′ N",
+    "description": "The central belt of the ecumene and intellectual core of the Abbasid empire. Contains imperial metropolises along the Silk Road (Baghdad, Mosul, Aleppo, Rayy, Isfahan, Nishapur, Merv, Balkh, Samarkand) and paper manufacturing hubs."
+  },
+  {
+    "number": 5,
+    "name": "al-Iqlīm al-Khāmis",
+    "arabicName": "الإقليم الخامس",
+    "bounds": "Latitudes ~39°00′ N to ~43°30′ N",
+    "description": "The northern civilized frontier spanning Southern Europe (Rome, Macedonia), Anatolia/Armenia (Malatya, Akhlat), Azerbaijan (Ardabil), Transoxiana oases (Khwarazm, Taraz, Isbijab), and the Gog/Magog frontier gates."
+  }
+]
