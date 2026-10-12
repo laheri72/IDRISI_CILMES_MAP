@@ -322,12 +322,11 @@ class _MapScreenState extends ConsumerState<MapScreen> {
       context: context,
       builder: (ctx) => AlertDialog(
         backgroundColor: const Color(0xFF2C1A0E),
-        title: const Text('Clear all saved pins?',
+        title: const Text('Restore default pin positions?',
             style: TextStyle(color: Color(0xFFE8D3A7))),
         content: const Text(
-          'This removes interactive city pins saved on this device. '
-          'Symbols printed in the historical map image remain. '
-          'City details and modern locations stay available.',
+          'This discards pin edits saved in this browser and restores all '
+          '60 bundled historical positions.',
           style: TextStyle(color: Colors.white70),
         ),
         actions: [
@@ -340,7 +339,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
             style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF8C2D19)),
             onPressed: () => Navigator.pop(ctx, true),
-            child: const Text('Clear pins'),
+            child: const Text('Restore defaults'),
           ),
         ],
       ),
@@ -359,8 +358,8 @@ class _MapScreenState extends ConsumerState<MapScreen> {
     }
     _showSnack(
       result.success
-          ? 'All saved pins cleared.'
-          : 'Could not clear pins: ${result.error ?? 'unknown error'}',
+          ? 'Default pin positions restored.'
+          : 'Could not restore pins: ${result.error ?? 'unknown error'}',
       success: result.success,
     );
   }
@@ -462,7 +461,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
             }),
           ),
           IconButton(
-            tooltip: 'Clear all saved pins',
+            tooltip: 'Restore default pin positions',
             icon: const Icon(Icons.delete_sweep_outlined),
             onPressed: _isResetting || _isSaving ? null : _resetToDefaults,
           ),
@@ -866,7 +865,7 @@ class _SearchAndFilterBarState extends ConsumerState<_SearchAndFilterBar> {
                   ? const Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        'All visible cities are pinned.',
+                        'Drag a pin to adjust it, or select a pin and tap the map.',
                         style: TextStyle(color: Colors.white54, fontSize: 13),
                       ),
                     )

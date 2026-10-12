@@ -8,8 +8,8 @@
     "idrisiHint": "Navigate to Clime 1, Section 3. Look inland south of the Mediterranean coast of Tripoli into the Fezzan desert corridor.",
     "modernLat": 26.5333,
     "modernLng": 13.0667,
-    "px": null,
-    "py": null
+    "px": 0.8589914,
+    "py": 0.3195389
   },
   {
     "id": "habasha",
@@ -20,8 +20,8 @@
     "idrisiHint": "Located in Clime 1, Sections 4 and 5. Find Bilād al-Ḥabasha positioned south (higher on the sheet) of Nubia and the Beja lands.",
     "modernLat": 14.1167,
     "modernLng": 38.7167,
-    "px": null,
-    "py": null
+    "px": 0.587269,
+    "py": 0.1705147
   },
   {
     "id": "dongola",
@@ -32,8 +32,8 @@
     "idrisiHint": "Located in Clime 1, Section 4. Trace the Nile River from the top downwards; Dunqula is prominently inscribed on the major bend of the river.",
     "modernLat": 18.2167,
     "modernLng": 30.7333,
-    "px": null,
-    "py": null
+    "px": 0.6690484,
+    "py": 0.1442102
   },
   {
     "id": "kosha",
@@ -44,8 +44,8 @@
     "idrisiHint": "Located in Clime 1, Section 4. Positioned on the Nile bank north (downward) from Dongola toward the Egyptian border, labeled as Kūshah.",
     "modernLat": 20.75,
     "modernLng": 30.55,
-    "px": null,
-    "py": null
+    "px": 0.634829,
+    "py": 0.20801
   },
   {
     "id": "chaul",
@@ -56,8 +56,8 @@
     "idrisiHint": "Found in Clime 1, Section 8. Look along the western coastal strip of India south of the Gulf of Cambay and the Indus mouth.",
     "modernLat": 18.55,
     "modernLng": 72.9167,
-    "px": null,
-    "py": null
+    "px": 0.3041587,
+    "py": 0.2517988
   },
   {
     "id": "al_mayd",
@@ -68,8 +68,8 @@
     "idrisiHint": "Located in Clime 1 & 2, Section 8. Look along coastal pastures west and south of the Indus River between Tīz in Makran and Daybul/Mansura in Sindh.",
     "modernLat": 24.75,
     "modernLng": 67.5,
-    "px": null,
-    "py": null
+    "px": 0.3534296,
+    "py": 0.2724674
   },
   {
     "id": "uman_dhofar",
@@ -80,8 +80,8 @@
     "idrisiHint": "Located in Clime 1, Sections 6 and 7. Find the southern/eastern protrusion of the Arabian Peninsula bordering the Sea of Oman.",
     "modernLat": 17,
     "modernLng": 54.0833,
-    "px": null,
-    "py": null
+    "px": 0.4332953,
+    "py": 0.3286028
   },
   {
     "id": "ghogha",
@@ -92,8 +92,8 @@
     "idrisiHint": "Located along the Gulf of Khambhat coast in Western India.",
     "modernLat": 21.6833,
     "modernLng": 72.2667,
-    "px": null,
-    "py": null
+    "px": 0.2752479,
+    "py": 0.2877212
   },
   {
     "id": "gwalior",
@@ -104,8 +104,8 @@
     "idrisiHint": "Situated along central Indian mountain ridge systems in Clime 2, Section 4–5.",
     "modernLat": 26.2167,
     "modernLng": 78.1667,
-    "px": null,
-    "py": null
+    "px": 0.2184617,
+    "py": 0.3268125
   },
   {
     "id": "al_ghamra",
@@ -116,8 +116,8 @@
     "idrisiHint": "Located along the lower Indus River inland from Daybul.",
     "modernLat": 25.3833,
     "modernLng": 68.3667,
-    "px": null,
-    "py": null
+    "px": 0.374092,
+    "py": 0.2952962
   },
   {
     "id": "berbera",
@@ -128,8 +128,8 @@
     "idrisiHint": "Positioned along the Gulf of Aden coast on the Somali seaboard.",
     "modernLat": 10.4333,
     "modernLng": 45,
-    "px": null,
-    "py": null
+    "px": 0.466029,
+    "py": 0.1198327
   },
   {
     "id": "debal",
@@ -140,8 +140,8 @@
     "idrisiHint": "Located near the Indus River delta mouth along the Arabian Sea.",
     "modernLat": 24.75,
     "modernLng": 67.5167,
-    "px": null,
-    "py": null
+    "px": 0.3773554,
+    "py": 0.2586783
   },
   {
     "id": "diyar_tali",
@@ -152,8 +152,8 @@
     "idrisiHint": "Located at the eastern boundary limit of Clime 2.",
     "modernLat": 23.3833,
     "modernLng": 103.15,
-    "px": null,
-    "py": null
+    "px": 0.1278606,
+    "py": 0.294727
   },
   {
     "id": "yamama",
@@ -164,8 +164,8 @@
     "idrisiHint": "Inland central plateau of the Arabian Peninsula.",
     "modernLat": 24.6333,
     "modernLng": 46.7167,
-    "px": null,
-    "py": null
+    "px": 0.4510844,
+    "py": 0.3258043
   },
   {
     "id": "taif",
@@ -176,8 +176,8 @@
     "idrisiHint": "Highlands east of the Red Sea coastal Tihama plain.",
     "modernLat": 21.2667,
     "modernLng": 40.4167,
-    "px": null,
-    "py": null
+    "px": 0.4933635,
+    "py": 0.2722061
   },
   {
     "id": "mecca",
@@ -188,8 +188,8 @@
     "idrisiHint": "Inland valley plain of Tihama in Western Arabia.",
     "modernLat": 21.4167,
     "modernLng": 39.8167,
-    "px": null,
-    "py": null
+    "px": 0.5099231,
+    "py": 0.279992
   },
   {
     "id": "medina",
@@ -200,8 +200,8 @@
     "idrisiHint": "Volcanic oasis plateau of Northern Hijaz.",
     "modernLat": 24.4667,
     "modernLng": 39.6,
-    "px": null,
-    "py": null
+    "px": 0.5037957,
+    "py": 0.342357
   },
   {
     "id": "akhmim",
@@ -212,8 +212,8 @@
     "idrisiHint": "Located on the east bank of the Nile River in Upper Egypt.",
     "modernLat": 26.55,
     "modernLng": 31.8167,
-    "px": null,
-    "py": null
+    "px": 0.6146782,
+    "py": 0.292668
   },
   {
     "id": "ifriqiya",
@@ -224,8 +224,8 @@
     "idrisiHint": "Inland North Africa west of Tripolitania.",
     "modernLat": 35,
     "modernLng": 9,
-    "px": null,
-    "py": null
+    "px": 0.8477704,
+    "py": 0.4391273
   },
   {
     "id": "bilad_samrani",
@@ -236,8 +236,8 @@
     "idrisiHint": "Lower riverine plain between Tigris and Euphrates.",
     "modernLat": 21.25,
     "modernLng": 41.4667,
-    "px": null,
-    "py": null
+    "px": 0.4504483,
+    "py": 0.4636611
   },
   {
     "id": "guangzhou",
@@ -248,8 +248,8 @@
     "idrisiHint": "Far Eastern coastline at the southern terminus of Chinese trade routes.",
     "modernLat": 23.1291,
     "modernLng": 113.2644,
-    "px": null,
-    "py": null
+    "px": 0.1170794,
+    "py": 0.2177232
   },
   {
     "id": "kandahar",
@@ -260,8 +260,8 @@
     "idrisiHint": "Southern Afghan plateau command post.",
     "modernLat": 31.6288,
     "modernLng": 65.7372,
-    "px": null,
-    "py": null
+    "px": 0.2846343,
+    "py": 0.3078565
   },
   {
     "id": "kabul",
@@ -272,8 +272,8 @@
     "idrisiHint": "High mountain basin in Eastern Afghanistan.",
     "modernLat": 34.5281,
     "modernLng": 69.1723,
-    "px": null,
-    "py": null
+    "px": 0.2583238,
+    "py": 0.3483976
   },
   {
     "id": "zaranj",
@@ -284,8 +284,8 @@
     "idrisiHint": "Sistan basin oasis complex.",
     "modernLat": 30.96,
     "modernLng": 61.86,
-    "px": null,
-    "py": null
+    "px": 0.3271838,
+    "py": 0.3910296
   },
   {
     "id": "barqa",
@@ -296,8 +296,8 @@
     "idrisiHint": "North African coastal plain east of Tripoli.",
     "modernLat": 32.4882,
     "modernLng": 20.8986,
-    "px": null,
-    "py": null
+    "px": 0.7111357,
+    "py": 0.3633971
   },
   {
     "id": "sirjan",
@@ -308,8 +308,8 @@
     "idrisiHint": "High plateau basin in Kerman province.",
     "modernLat": 30.2839,
     "modernLng": 57.0834,
-    "px": null,
-    "py": null
+    "px": 0.3685243,
+    "py": 0.3968388
   },
   {
     "id": "shiraz",
@@ -320,8 +320,8 @@
     "idrisiHint": "Central Fars plain surrounded by Zagros peaks.",
     "modernLat": 29.5926,
     "modernLng": 52.5836,
-    "px": null,
-    "py": null
+    "px": 0.4073815,
+    "py": 0.4193539
   },
   {
     "id": "ahvaz",
@@ -332,8 +332,8 @@
     "idrisiHint": "Khuzestan plain on the Karun River.",
     "modernLat": 31.3183,
     "modernLng": 48.6706,
-    "px": null,
-    "py": null
+    "px": 0.4295693,
+    "py": 0.4555153
   },
   {
     "id": "basra",
@@ -344,8 +344,8 @@
     "idrisiHint": "Head of the Persian Gulf / Shatt al-Arab waterway.",
     "modernLat": 30.5081,
     "modernLng": 47.7835,
-    "px": null,
-    "py": null
+    "px": 0.45909,
+    "py": 0.4355074
   },
   {
     "id": "kufa",
@@ -356,8 +356,8 @@
     "idrisiHint": "Euphrates riverbank in central Iraq.",
     "modernLat": 32.0298,
     "modernLng": 44.4011,
-    "px": null,
-    "py": null
+    "px": 0.4722278,
+    "py": 0.4788053
   },
   {
     "id": "damascus",
@@ -368,8 +368,8 @@
     "idrisiHint": "Barada River oasis at the foot of the Anti-Lebanon mountains.",
     "modernLat": 33.5138,
     "modernLng": 36.2765,
-    "px": null,
-    "py": null
+    "px": 0.53003,
+    "py": 0.4289723
   },
   {
     "id": "jerusalem",
@@ -380,8 +380,8 @@
     "idrisiHint": "Judean mountains between the Mediterranean and the Dead Sea.",
     "modernLat": 31.7683,
     "modernLng": 35.2137,
-    "px": null,
-    "py": null
+    "px": 0.5520721,
+    "py": 0.3933003
   },
   {
     "id": "fustat",
@@ -392,8 +392,8 @@
     "idrisiHint": "East bank of the Nile River south of modern Cairo.",
     "modernLat": 30.0059,
     "modernLng": 31.2281,
-    "px": null,
-    "py": null
+    "px": 0.6238472,
+    "py": 0.3911928
   },
   {
     "id": "alexandria",
@@ -404,8 +404,8 @@
     "idrisiHint": "Western edge of the Nile Delta on the Mediterranean coast.",
     "modernLat": 31.2001,
     "modernLng": 29.9187,
-    "px": null,
-    "py": null
+    "px": 0.623114,
+    "py": 0.430573
   },
   {
     "id": "kairouan",
@@ -416,8 +416,8 @@
     "idrisiHint": "Inland plains of central Tunisia.",
     "modernLat": 35.6781,
     "modernLng": 10.0963,
-    "px": null,
-    "py": null
+    "px": 0.8437357,
+    "py": 0.4220286
   },
   {
     "id": "tangier",
@@ -428,8 +428,8 @@
     "idrisiHint": "Northwestern corner of Africa on the Strait of Gibraltar.",
     "modernLat": 35.7595,
     "modernLng": -5.834,
-    "px": null,
-    "py": null
+    "px": 0.9694213,
+    "py": 0.4689102
   },
   {
     "id": "samarkand",
@@ -440,8 +440,8 @@
     "idrisiHint": "Clime 4, Section 8. Located in Sogdia north of the Oxus River, east of Bukhara.",
     "modernLat": 39.65,
     "modernLng": 66.95,
-    "px": null,
-    "py": null
+    "px": 0.2517236,
+    "py": 0.4944782
   },
   {
     "id": "balkh",
@@ -452,8 +452,8 @@
     "idrisiHint": "Clime 4, Section 7/8. Placed south of the Oxus River at the northern foot of the Hindu Kush.",
     "modernLat": 36.75,
     "modernLng": 66.8833,
-    "px": null,
-    "py": null
+    "px": 0.2652884,
+    "py": 0.4293348
   },
   {
     "id": "herat",
@@ -464,8 +464,8 @@
     "idrisiHint": "Clime 4, Section 7. Located along the Hari River between Nishapur, Merv, and Balkh.",
     "modernLat": 34.3333,
     "modernLng": 62.2,
-    "px": null,
-    "py": null
+    "px": 0.2984423,
+    "py": 0.4253249
   },
   {
     "id": "merv",
@@ -476,8 +476,8 @@
     "idrisiHint": "Clime 4, Section 7. Terminal delta of the Murghab River in the Karakum Desert.",
     "modernLat": 37.65,
     "modernLng": 62.1833,
-    "px": null,
-    "py": null
+    "px": 0.2881462,
+    "py": 0.4752956
   },
   {
     "id": "nishapur",
@@ -488,8 +488,8 @@
     "idrisiHint": "Clime 4, Section 7. Western approaches of Khurasan at the base of the Binalud mountains.",
     "modernLat": 36.2,
     "modernLng": 58.7833,
-    "px": null,
-    "py": null
+    "px": 0.3351872,
+    "py": 0.4847777
   },
   {
     "id": "jurjan",
@@ -500,8 +500,8 @@
     "idrisiHint": "Clime 4, Section 6/7. Coastal flatlands southeast of the Caspian Sea.",
     "modernLat": 37.25,
     "modernLng": 55.1667,
-    "px": null,
-    "py": null
+    "px": 0.2983096,
+    "py": 0.5656215
   },
   {
     "id": "amol",
@@ -512,8 +512,8 @@
     "idrisiHint": "Clime 4, Section 6. Between the Caspian shore and the northern slopes of Mount Damavand.",
     "modernLat": 36.4667,
     "modernLng": 52.35,
-    "px": null,
-    "py": null
+    "px": 0.2941877,
+    "py": 0.5027834
   },
   {
     "id": "rayy",
@@ -524,8 +524,8 @@
     "idrisiHint": "Clime 4, Section 6. Plateau south of the Alborz mountains junction between Qazvin and Hamadan.",
     "modernLat": 35.5833,
     "modernLng": 51.4333,
-    "px": null,
-    "py": null
+    "px": 0.381204,
+    "py": 0.5307306
   },
   {
     "id": "daylam_gilan",
@@ -536,8 +536,8 @@
     "idrisiHint": "Clime 4, Section 6. Southwestern curve of the Caspian Sea.",
     "modernLat": 36.8833,
     "modernLng": 49.9,
-    "px": null,
-    "py": null
+    "px": 0.3915656,
+    "py": 0.5335819
   },
   {
     "id": "isfahan",
@@ -548,8 +548,8 @@
     "idrisiHint": "Clime 4, Section 6. Irrigated valley of the Zayandeh River south of Rayy and Qom.",
     "modernLat": 32.65,
     "modernLng": 51.6667,
-    "px": null,
-    "py": null
+    "px": 0.4001095,
+    "py": 0.4589287
   },
   {
     "id": "hamadan",
@@ -560,8 +560,8 @@
     "idrisiHint": "Clime 4, Section 6. High mountain plain at the base of Mount Alvand.",
     "modernLat": 34.8,
     "modernLng": 48.5,
-    "px": null,
-    "py": null
+    "px": 0.3925237,
+    "py": 0.5083045
   },
   {
     "id": "baghdad",
@@ -572,8 +572,8 @@
     "idrisiHint": "Clime 4, Section 5. Labeled Madīnat al-Salām on the Tigris River, south of Samarra.",
     "modernLat": 33.3333,
     "modernLng": 44.3833,
-    "px": null,
-    "py": null
+    "px": 0.454562,
+    "py": 0.5150701
   },
   {
     "id": "mosul",
@@ -584,8 +584,8 @@
     "idrisiHint": "Clime 4, Section 5. Western bank of the Tigris River directly opposite Nineveh.",
     "modernLat": 36.3333,
     "modernLng": 43.1333,
-    "px": null,
-    "py": null
+    "px": 0.4795166,
+    "py": 0.5622316
   },
   {
     "id": "aleppo",
@@ -596,8 +596,8 @@
     "idrisiHint": "Clime 4, Section 4. Inland from Antioch and Latakia, west of the Euphrates.",
     "modernLat": 36.2,
     "modernLng": 37.15,
-    "px": null,
-    "py": null
+    "px": 0.5138685,
+    "py": 0.5202495
   },
   {
     "id": "rome",
@@ -608,8 +608,8 @@
     "idrisiHint": "Clime 5, Western European section.",
     "modernLat": 41.9,
     "modernLng": 12.4964,
-    "px": null,
-    "py": null
+    "px": 0.7379399,
+    "py": 0.6191658
   },
   {
     "id": "macedonia",
@@ -620,8 +620,8 @@
     "idrisiHint": "Clime 5, European Balkan section.",
     "modernLat": 40.6401,
     "modernLng": 22.9444,
-    "px": null,
-    "py": null
+    "px": 0.6036449,
+    "py": 0.6518284
   },
   {
     "id": "malatya",
@@ -632,8 +632,8 @@
     "idrisiHint": "Clime 5, Upper Mesopotamian / Anatolian border.",
     "modernLat": 38.3552,
     "modernLng": 38.3095,
-    "px": null,
-    "py": null
+    "px": 0.5293836,
+    "py": 0.5827255
   },
   {
     "id": "akhlat",
@@ -644,8 +644,8 @@
     "idrisiHint": "Clime 5, Lake Van shoreline.",
     "modernLat": 38.7511,
     "modernLng": 42.4822,
-    "px": null,
-    "py": null
+    "px": 0.4714849,
+    "py": 0.6084374
   },
   {
     "id": "ardabil",
@@ -656,8 +656,8 @@
     "idrisiHint": "Clime 5, High plateau near Mount Sabalan.",
     "modernLat": 38.2498,
     "modernLng": 48.2933,
-    "px": null,
-    "py": null
+    "px": 0.4157815,
+    "py": 0.6001455
   },
   {
     "id": "taraz",
@@ -668,8 +668,8 @@
     "idrisiHint": "Clime 5, Talas River valley.",
     "modernLat": 42.9,
     "modernLng": 71.3667,
-    "px": null,
-    "py": null
+    "px": 0.2161451,
+    "py": 0.5742347
   },
   {
     "id": "bilad_khaqan",
@@ -680,8 +680,8 @@
     "idrisiHint": "Clime 5, Chu and Ili river basins.",
     "modernLat": 42.8167,
     "modernLng": 75.3,
-    "px": null,
-    "py": null
+    "px": 0.1712786,
+    "py": 0.5148183
   },
   {
     "id": "khwarazm",
@@ -692,8 +692,8 @@
     "idrisiHint": "Clime 5, Amu Darya river delta.",
     "modernLat": 42.3,
     "modernLng": 59.15,
-    "px": null,
-    "py": null
+    "px": 0.2885637,
+    "py": 0.6369498
   },
   {
     "id": "isbijab",
@@ -704,8 +704,8 @@
     "idrisiHint": "Clime 5, Northern frontier of Transoxiana.",
     "modernLat": 42.3,
     "modernLng": 69.75,
-    "px": null,
-    "py": null
+    "px": 0.2275655,
+    "py": 0.5743274
   },
   {
     "id": "yajuj_majuj",
@@ -716,7 +716,7 @@
     "idrisiHint": "Clime 5, Extreme northeastern mountain barrier.",
     "modernLat": 45.2,
     "modernLng": 82.5,
-    "px": null,
-    "py": null
+    "px": 0.0754464,
+    "py": 0.6710089
   }
 ]

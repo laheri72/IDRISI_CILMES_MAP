@@ -53,7 +53,7 @@ class CityListDrawer extends ConsumerWidget {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  '$pinnedCount of $totalCount saved historical pins',
+                  '$pinnedCount of $totalCount historical pins',
                   style: const TextStyle(color: Colors.white54, fontSize: 13),
                 ),
                 const SizedBox(height: 8),

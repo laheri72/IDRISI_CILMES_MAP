@@ -40,13 +40,46 @@ City sampleCity({
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  test('bundled cities have no historical pins', () async {
+  test('all bundled historical pins display on both map scans', () async {
     final raw = await rootBundle.loadString('assets/data/cities.json');
     final cities = (jsonDecode(raw) as List<dynamic>)
         .map((value) => City.fromJson(value as Map<String, dynamic>))
         .toList();
     expect(cities, hasLength(60));
-    expect(cities.where((city) => city.isPinned), isEmpty);
+    expect(cities.where((city) => city.isPinned), hasLength(60));
+    for (final city in cities) {
+      expect(MapCoordinates.isOnBothMaps(city.px!, city.py!), isTrue,
+          reason: '${city.id} must be on both map sheets');
+      final english = MapCoordinates.forDisplay(
+          city.px!, city.py!, english: true);
+      final restored = MapCoordinates.fromDisplay(
+          english.px, english.py, english: true);
+      expect((restored.px - city.px!).abs(), lessThan(0.00001));
+      expect((restored.py - city.py!).abs(), lessThan(0.00001));
+    }
+  });
+
+  test('reset restores all 60 bundled pins after a saved edit', () async {
+    final raw = await rootBundle.loadString('assets/data/cities.json');
+    String? stored;
+    final service = CityStorageService(
+      loadBaseAsset: () async => raw,
+      readRawOverride: () async => stored,
+      writeRawOverride: (value) async {
+        stored = value;
+        return true;
+      },
+    );
+    final original = await service.loadMergedCities();
+    final edited = [...original];
+    edited[0] = edited[0].copyWith(px: 0.5, py: 0.5);
+    expect((await service.saveUpdatedCities(edited)).success, isTrue);
+    expect((await service.loadMergedCities()).first.px, 0.5);
+    expect((await service.clearOverrides()).success, isTrue);
+    final restored = await service.loadMergedCities();
+    expect(restored.where((city) => city.isPinned), hasLength(60));
+    expect(restored.first.px, original.first.px);
+    expect(restored.first.py, original.first.py);
   });
 
   test('clear writes an empty pin set that stays empty after reload', () async {

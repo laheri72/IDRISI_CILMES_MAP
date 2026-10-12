@@ -1,0 +1,61 @@
+id,english_x,english_y,basis,map_text,review_note
+jarma,11241,1818,label,garma,City symbol in Fezzan; distinct from small Garma.
+habasha,7700,850,region,bilad al habasa,Representative position in the printed Habasha region.
+dongola,8780,680,label,donkla,Nile city symbol immediately below the marshes; shifted right after visual review.
+kosha,8330,1100,estimated,Nubian Nile,No unambiguous Kushah label found; between Dongola and the northern cataracts.
+chaul,3915,1365,label,saimur,Coastal Saimur label used for the Chaul identification.
+al_mayd,4550,1500,region,bilad al sind,Representative lower Sind coast; Meds are a population rather than one city.
+uman_dhofar,5619,1869,label,golfar,Map transcription near southern Arabia; name identification needs review.
+ghogha,3550,1600,estimated,western India coast,No unambiguous Ghogha inscription found on this scan.
+gwalior,2800,1850,estimated,interior India,No unambiguous Gwalior inscription found on this scan.
+al_ghamra,4820,1650,estimated,lower Indus,Placed inland from Daybul in the lower Indus corridor.
+berbera,6078,520,region,ard berbera,Representative coast within the printed Berbera region.
+debal,4863,1405,label,daibal,City symbol by the Indus delta.
+diyar_tali,1580,1650,estimated,bilad al sin,Yunnan or Dali identification is not confirmed by the scan.
+yamama,5860,1856,region,ard al iemama,Representative location in the printed Yamama region.
+taif,6430,1510,estimated,near mekka,Taif is not unambiguously legible; placed east of Mecca.
+mecca,6653,1552,label,mekka,City symbol at Mecca.
+medina,6570,1969,label,iatrib,Yathrib is the name used on the map.
+akhmim,8052,1643,label,ahmim,Nile city symbol.
+ifriqiya,11100,2600,region,bilad afrikia,Representative position in the printed Ifriqiya region.
+bilad_samrani,5850,2750,estimated,lower Euphrates,Dataset identification is unconfirmed on the map.
+guangzhou,1440,1145,estimated,bilad al sin,South China coast; no secure Canton or Guangzhou inscription found.
+kandahar,3672,1732,label,al kandahar,City symbol.
+kabul,3333,1988,label,kabul,City symbol.
+zaranj,4216,2273,label,zarange,City symbol in Sijistan.
+barqa,9295,2080,label,barka,City symbol in Cyrenaica; multiple Barqa labels occur nearby.
+sirjan,4755,2325,label,al sirgan,City symbol in Kerman.
+shiraz,5272,2473,label,siraz,City symbol in Fars.
+ahvaz,5570,2700,label,al ahuaz,City symbol in Khuzestan.
+basra,5967,2574,label,al basra,City symbol at head of Gulf.
+kufa,6142,2845,label,al kufa,City symbol on Euphrates.
+damascus,6919,2533,label,dimask,City symbol in Syria.
+jerusalem,7213,2298,label,al kuds,City symbol in Palestine.
+fustat,8166,2283,label,misr,Map uses Misr for the Fustat area.
+alexandria,8154,2538,label,al iskanderia,Coastal city symbol.
+kairouan,11046,2489,label,kairuan,City symbol inland from Tunis.
+tangier,12723,2791,label,tango,Western Maghreb coastal city symbol; transcription is approximate.
+samarkand,3240,2890,label,samarkand,City symbol in Sogdia.
+balkh,3420,2490,estimated,Balkh region,No secure Balkh inscription found in the OCR pass.
+herat,3848,2473,label,herat,City symbol.
+merv,3717,2772,label,maru,Marw or Merv city symbol.
+nishapur,4331,2855,label,nissbur,Nishapur city symbol.
+jurjan,3860,3330,label,gorgan,Gorgan city symbol near southeastern Caspian region.
+amol,3798,2943,label,amol,City symbol in Tabaristan.
+rayy,4939,3159,label,al rai,City symbol south of Caspian.
+daylam_gilan,5074,3179,region,al daileme,Representative position in the printed Daylam region.
+isfahan,5178,2725,label,isbahan,City symbol.
+hamadan,5084,3026,label,hamadan,City symbol; second similar name elsewhere excluded.
+baghdad,5904,3068,label,bag,Partly legible Baghdad label near the Tigris.
+mosul,6236,3350,label,al mosul,City symbol on Tigris.
+aleppo,6698,3098,label,haleb,City symbol in northern Syria.
+rome,9650,3700,estimated,Italian peninsula,No secure Rome city inscription found; representative central Italy.
+macedonia,7900,3900,region,Balkan region,Representative Balkan position; no single Macedonia city exists.
+malatya,6903,3476,label,malatia,City symbol in Anatolia.
+akhlat,6127,3630,label,halat,City symbol in Lake Van region.
+ardabil,5392,3582,label,ardabil,City symbol in Azerbaijan; shifted down after visual review.
+taraz,2770,3406,estimated,Talas region,Name not securely legible; placed near neighboring Turkic cities.
+bilad_khaqan,2166,3025,region,hakan hizlig,Representative position in the printed Khaqan or Turkic region.
+khwarazm,3742,3793,region,buhaire hoarazm,Representative Khwarazm delta region by named lake.
+isbijab,2921,3403,label,asfingab,Isbijab or Sayram city symbol.
+yajuj_majuj,900,4050,region,ard jagug,Representative position within the printed Yajuj or Majuj region.

@@ -22,8 +22,8 @@ class _TrialPinStorage extends CityStorageService {
           idrisiHint: 'Trial navigation hint',
           modernLat: 26.53,
           modernLng: 13.07,
-          px: cleared ? null : 0.3,
-          py: cleared ? null : 0.4,
+          px: cleared ? 0.1 : 0.3,
+          py: cleared ? 0.2 : 0.4,
         ),
       ];
 
@@ -85,7 +85,7 @@ void main() {
     );
   });
 
-  testWidgets('clear all saved pins removes a visible trial pin',
+  testWidgets('restore defaults replaces an edited pin',
       (tester) async {
     await tester.binding.setSurfaceSize(const Size(1200, 800));
     addTearDown(() => tester.binding.setSurfaceSize(null));
@@ -120,9 +120,9 @@ void main() {
 
     expect(find.byTooltip('Modern map reference'), findsOneWidget);
     expect(find.byTooltip('Edit map pins'), findsOneWidget);
-    await tester.tap(find.byTooltip('Clear all saved pins'));
+    await tester.tap(find.byTooltip('Restore default pin positions'));
     await tester.pump();
-    await tester.tap(find.text('Clear pins'));
+    await tester.tap(find.text('Restore defaults'));
     await tester.pump();
     await tester.runAsync(
         () => Future<void>.delayed(const Duration(milliseconds: 200)));
@@ -136,8 +136,9 @@ void main() {
     }
 
     expect(storage.cleared, isTrue);
-    expect(container.read(citiesProvider).value!.where((city) => city.isPinned),
-        isEmpty);
+    final restored = container.read(citiesProvider).value!.single;
+    expect(restored.px, 0.1);
+    expect(restored.py, 0.2);
   });
 
   testWidgets('map toggle keeps an existing pin in the same region',
@@ -190,7 +191,7 @@ void main() {
     expect(find.byTooltip('Switch to English map'), findsOneWidget);
     expect(find.byTooltip('Modern map reference'), findsOneWidget);
     expect(find.byTooltip('Edit map pins'), findsOneWidget);
-    expect(find.byTooltip('Clear all saved pins'), findsOneWidget);
+    expect(find.byTooltip('Restore default pin positions'), findsOneWidget);
     expect(tester.takeException(), isNull);
 
     await tester.tap(find.byTooltip('Edit map pins'));
