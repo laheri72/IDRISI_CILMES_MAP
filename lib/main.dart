@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'screens/map_screen.dart';
+import 'theme/clime_palette.dart';
 
 void main() {
   runApp(
@@ -20,12 +21,16 @@ class IdrisiMapApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: const Color(0xFF2C1A0E),
-        scaffoldBackgroundColor: const Color(0xFF1E120A),
+        primaryColor: ClimePalette.panel,
+        scaffoldBackgroundColor: ClimePalette.ink,
         colorScheme: const ColorScheme.dark(
-          primary: Color(0xFF8C2D19),
-          secondary: Color(0xFFE8D3A7),
-          surface: Color(0xFF2C1A0E),
+          primary: ClimePalette.parchment,
+          secondary: Color(0xFF007F83),
+          surface: ClimePalette.panel,
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: ClimePalette.panelRaised,
+          foregroundColor: ClimePalette.parchment,
         ),
       ),
       home: const MapScreen(),

@@ -5,6 +5,7 @@ import '../models/city_model.dart';
 import '../providers/map_providers.dart';
 import '../providers/search_providers.dart';
 import '../utils/map_coordinates.dart';
+import '../theme/clime_palette.dart';
 import 'city_detail_sheet.dart';
 import 'city_list_drawer.dart';
 import 'google_map_dialog.dart';
@@ -413,7 +414,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
     final citiesState = ref.watch(citiesProvider);
     final filteredCities = ref.watch(filteredCitiesProvider);
 
-    // Set of ids currently visible after filtering, used to dim hidden pins.
+    // Only matching pins remain visible while searching or filtering.
     final visibleIds = filteredCities.map((c) => c.id).toSet();
     final query = ref.watch(searchQueryProvider);
     final bool isFiltering = query.trim().isNotEmpty ||
@@ -579,8 +580,9 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                           if (px == null || py == null) {
                             return const SizedBox.shrink();
                           }
-                          final bool dimmed =
-                              isFiltering && !visibleIds.contains(city.id);
+                          if (isFiltering && !visibleIds.contains(city.id)) {
+                            return const SizedBox.shrink();
+                          }
                           final bool staged =
                               _pendingChanges.containsKey(city.id);
                           final displayCoords = MapCoordinates.forDisplay(
@@ -595,7 +597,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                                 matrix,
                                 Offset(displayCoords.px * _canvasSize.width,
                                     displayCoords.py * _canvasSize.height)),
-                            dimmed: dimmed,
+                            size: _currentScale < _fitScale * 2 ? 30 : 40,
                             staged: staged,
                             isSelected: _selectedCityId == city.id,
                             pickerMode: _isPickerMode,
@@ -654,7 +656,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
 class _CityPin extends StatelessWidget {
   final City city;
   final Offset position;
-  final bool dimmed;
+  final double size;
   final bool staged;
   final bool isSelected;
   final bool pickerMode;
@@ -664,7 +666,7 @@ class _CityPin extends StatelessWidget {
   const _CityPin({
     required this.city,
     required this.position,
-    required this.dimmed,
+    required this.size,
     required this.staged,
     required this.isSelected,
     required this.pickerMode,
@@ -674,49 +676,71 @@ class _CityPin extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color markerColor = staged
-        ? Colors.orange
-        : isSelected
-            ? Colors.yellow
-            : Colors.red;
+    final markerColor = ClimePalette.of(city.clime);
 
     return Positioned(
-      left: position.dx - 18,
-      top: position.dy - 32,
+      left: position.dx - size / 2,
+      top: position.dy - size + 2,
       child: Tooltip(
-        message: city.name,
+        message: '${city.name} · Clime ${city.clime}',
         child: Semantics(
-          label: '${city.name}, historical map pin',
+          label: '${city.name}, Clime ${city.clime} historical map pin',
           button: true,
           child: GestureDetector(
             behavior: HitTestBehavior.opaque,
             onTap: onTap,
             onPanUpdate:
                 onDrag == null ? null : (details) => onDrag!(details.delta),
-            child: Opacity(
-              opacity: dimmed ? 0.25 : 1.0,
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
+            child: SizedBox(
+              width: size,
+              height: size + 2,
+              child: Stack(
+                clipBehavior: Clip.none,
                 children: [
                   Icon(Icons.location_on,
-                      size: 30,
+                      size: size,
                       color: markerColor,
                       shadows: const [
                         Shadow(color: Colors.black, blurRadius: 5)
                       ]),
-                  if (isSelected)
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 4, vertical: 1),
-                      decoration: BoxDecoration(
-                        color: Colors.black.withValues(alpha: 0.6),
-                        borderRadius: BorderRadius.circular(3),
-                      ),
-                      child: Text(
-                        city.name,
+                  Positioned(
+                    top: size * 0.19,
+                    left: 0,
+                    right: 0,
+                    child: Text('${city.clime}',
                         textAlign: TextAlign.center,
-                        style:
-                            const TextStyle(color: Colors.white, fontSize: 11),
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: size * 0.36,
+                            fontWeight: FontWeight.w900,
+                            shadows: [
+                              Shadow(color: Colors.black87, blurRadius: 2)
+                            ])),
+                  ),
+                  if (staged)
+                    const Positioned(
+                      right: 0,
+                      top: 0,
+                      child: Icon(Icons.edit, size: 15, color: Colors.white),
+                    ),
+                  if (isSelected)
+                    Positioned(
+                      top: size + 2,
+                      left: size / 2 - 70,
+                      width: 140,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 4, vertical: 1),
+                        decoration: BoxDecoration(
+                          color: Colors.black.withValues(alpha: 0.6),
+                          borderRadius: BorderRadius.circular(3),
+                        ),
+                        child: Text(
+                          city.name,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                              color: Colors.white, fontSize: 11),
+                        ),
                       ),
                     ),
                 ],
@@ -775,13 +799,20 @@ class _SearchAndFilterBarState extends ConsumerState<_SearchAndFilterBar> {
     });
     final query = ref.watch(searchQueryProvider);
     final selectedClime = ref.watch(selectedClimeFilterProvider);
-    final climesAsync = ref.watch(climesProvider);
+    final allCities = ref.watch(citiesProvider).maybeWhen(
+          data: (cities) => cities,
+          orElse: () => const <City>[],
+        );
+    final climeCounts = <int, int>{};
+    for (final city in allCities) {
+      climeCounts.update(city.clime, (count) => count + 1, ifAbsent: () => 1);
+    }
     final filteredCities = ref.watch(filteredCitiesProvider);
     final unpinned = filteredCities.where((c) => !c.isPinned).toList();
 
     return Container(
-      color: const Color(0xFF241408),
-      padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
+      color: ClimePalette.panel,
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -811,49 +842,80 @@ class _SearchAndFilterBarState extends ConsumerState<_SearchAndFilterBar> {
             onChanged: (value) =>
                 ref.read(searchQueryProvider.notifier).state = value,
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 12),
+          Row(
+            children: [
+              const Text('SEVEN CLIMES',
+                  style: TextStyle(
+                      color: ClimePalette.parchment,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 1.6)),
+              const Spacer(),
+              Text('${filteredCities.length} shown',
+                  style: const TextStyle(color: Colors.white70, fontSize: 12)),
+            ],
+          ),
+          const SizedBox(height: 7),
           SizedBox(
-            height: 38,
+            height: 42,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
                 Padding(
                   padding: const EdgeInsets.only(right: 6),
                   child: ChoiceChip(
-                    label: const Text('All climes'),
+                    label: const Text('All'),
                     selected: selectedClime == null,
                     onSelected: (_) => ref
                         .read(selectedClimeFilterProvider.notifier)
                         .state = null,
-                    selectedColor: const Color(0xFF8C2D19),
-                    backgroundColor: const Color(0xFF2C1A0E),
+                    selectedColor:
+                        ClimePalette.parchment.withValues(alpha: 0.22),
+                    backgroundColor: ClimePalette.panelRaised,
                     labelStyle: TextStyle(
                       color:
                           selectedClime == null ? Colors.white : Colors.white70,
                     ),
                   ),
                 ),
-                ...climesAsync.maybeWhen(
-                  data: (climes) => climes.map((clime) {
-                    final selected = selectedClime == clime.number;
-                    return Padding(
-                      padding: const EdgeInsets.only(right: 6),
-                      child: ChoiceChip(
-                        label: Text('Clime ${clime.number}'),
-                        selected: selected,
-                        onSelected: (_) => ref
-                            .read(selectedClimeFilterProvider.notifier)
-                            .state = selected ? null : clime.number,
-                        selectedColor: const Color(0xFF8C2D19),
-                        backgroundColor: const Color(0xFF2C1A0E),
-                        labelStyle: TextStyle(
-                          color: selected ? Colors.white : Colors.white70,
-                        ),
+                ...List.generate(7, (index) {
+                  final number = index + 1;
+                  final count = climeCounts[number] ?? 0;
+                  final selected = selectedClime == number;
+                  final accent = ClimePalette.of(number);
+                  return Padding(
+                    padding: const EdgeInsets.only(right: 6),
+                    child: ChoiceChip(
+                      avatar: CircleAvatar(
+                        radius: 11,
+                        backgroundColor: accent,
+                        child: Text('$number',
+                            style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 11,
+                                fontWeight: FontWeight.bold)),
                       ),
-                    );
-                  }).toList(),
-                  orElse: () => <Widget>[],
-                ),
+                      label: Text(count == 0
+                          ? 'Clime $number · empty'
+                          : 'Clime $number · $count'),
+                      selected: selected,
+                      onSelected: count == 0
+                          ? null
+                          : (_) => ref
+                              .read(selectedClimeFilterProvider.notifier)
+                              .state = selected ? null : number,
+                      selectedColor: accent.withValues(alpha: 0.35),
+                      backgroundColor: ClimePalette.panelRaised,
+                      side: BorderSide(
+                          color: selected ? accent : Colors.white12,
+                          width: selected ? 2 : 1),
+                      labelStyle: TextStyle(
+                        color: count == 0 ? Colors.white38 : Colors.white,
+                      ),
+                    ),
+                  );
+                }),
               ],
             ),
           ),

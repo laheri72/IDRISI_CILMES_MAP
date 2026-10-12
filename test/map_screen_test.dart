@@ -85,8 +85,7 @@ void main() {
     );
   });
 
-  testWidgets('restore defaults replaces an edited pin',
-      (tester) async {
+  testWidgets('restore defaults replaces an edited pin', (tester) async {
     await tester.binding.setSurfaceSize(const Size(1200, 800));
     addTearDown(() => tester.binding.setSurfaceSize(null));
     final storage = _TrialPinStorage();
@@ -157,7 +156,7 @@ void main() {
     await tester.pump();
     await tester.pump();
 
-    final pin = find.byTooltip('Jarma');
+    final pin = find.byTooltip('Jarma · Clime 1');
     expect(pin, findsOneWidget);
     final arabicPosition = tester.getTopLeft(pin);
     await tester.tap(find.byTooltip('Switch to English map'));
@@ -216,7 +215,7 @@ void main() {
     await tester.pump();
     await tester.pump();
 
-    await tester.tap(find.byTooltip('Jarma'));
+    await tester.tap(find.byTooltip('Jarma · Clime 1'));
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 300));
     expect(find.text('Jarma historical significance'), findsOneWidget);

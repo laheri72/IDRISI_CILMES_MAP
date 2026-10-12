@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/city_model.dart';
+import '../theme/clime_palette.dart';
 
 /// A draggable bottom sheet showing the full historical record for a city.
 class CityDetailSheet extends StatelessWidget {
@@ -16,10 +17,11 @@ class CityDetailSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final mediaQuery = MediaQuery.of(context);
+    final accent = ClimePalette.of(city.clime);
 
     return Container(
       decoration: const BoxDecoration(
-        color: Color(0xFF2C1A0E),
+        color: ClimePalette.panel,
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
       padding: const EdgeInsets.fromLTRB(20, 12, 20, 20),
@@ -41,8 +43,7 @@ class CityDetailSheet extends StatelessWidget {
             ),
             Row(
               children: [
-                const Icon(Icons.location_city,
-                    color: Color(0xFFE8D3A7), size: 28),
+                Icon(Icons.location_city, color: accent, size: 28),
                 const SizedBox(width: 10),
                 Expanded(
                   child: Column(
@@ -60,7 +61,7 @@ class CityDetailSheet extends StatelessWidget {
                         city.arabicName,
                         textDirection: TextDirection.rtl,
                         style: theme.textTheme.titleMedium?.copyWith(
-                          color: const Color(0xFFE8D3A7),
+                          color: ClimePalette.parchment,
                         ),
                       ),
                     ],
@@ -68,15 +69,16 @@ class CityDetailSheet extends StatelessWidget {
                 ),
                 Chip(
                   label: Text('Clime ${city.clime}'),
-                  backgroundColor: const Color(0xFF8C2D19),
+                  backgroundColor: accent,
                   labelStyle: const TextStyle(color: Colors.white),
                 ),
               ],
             ),
             const SizedBox(height: 16),
-            const _SectionTitle(
+            _SectionTitle(
               icon: Icons.history_edu,
               title: 'Historical Significance',
+              color: accent,
             ),
             const SizedBox(height: 6),
             Text(
@@ -92,7 +94,7 @@ class CityDetailSheet extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF8C2D19),
+                  backgroundColor: accent,
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(vertical: 14),
                 ),
@@ -112,19 +114,21 @@ class CityDetailSheet extends StatelessWidget {
 class _SectionTitle extends StatelessWidget {
   final IconData icon;
   final String title;
+  final Color color;
 
-  const _SectionTitle({required this.icon, required this.title});
+  const _SectionTitle(
+      {required this.icon, required this.title, required this.color});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(icon, size: 18, color: const Color(0xFFE8D3A7)),
+        Icon(icon, size: 18, color: color),
         const SizedBox(width: 8),
         Text(
           title,
-          style: const TextStyle(
-            color: Color(0xFFE8D3A7),
+          style: TextStyle(
+            color: color,
             fontSize: 16,
             fontWeight: FontWeight.bold,
           ),
