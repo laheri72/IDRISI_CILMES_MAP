@@ -10,9 +10,10 @@ Widget getGoogleMapWidget(String url) {
   if (!_registered) {
     ui.platformViewRegistry.registerViewFactory(
       viewType,
-      (int viewId) {
+      (int viewId, {Object? params}) {
         final iframe = web.HTMLIFrameElement()
-          ..src = url
+          ..src = params as String
+          ..title = 'Ikhwan climes custom modern map'
           ..style.border = 'none'
           ..style.width = '100%'
           ..style.height = '100%';
@@ -22,5 +23,6 @@ Widget getGoogleMapWidget(String url) {
     _registered = true;
   }
 
-  return const HtmlElementView(viewType: viewType);
+  return HtmlElementView(
+      key: ValueKey(url), viewType: viewType, creationParams: url);
 }

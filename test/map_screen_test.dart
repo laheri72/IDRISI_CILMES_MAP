@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:idrisi_map_app/providers/map_providers.dart';
@@ -7,6 +6,7 @@ import 'package:idrisi_map_app/screens/map_screen.dart';
 import 'package:idrisi_map_app/screens/google_map_dialog.dart';
 import 'package:idrisi_map_app/services/city_storage_service.dart';
 import 'package:idrisi_map_app/models/city_model.dart';
+import 'package:idrisi_map_app/providers/modern_reference_provider.dart';
 
 class _TrialPinStorage extends CityStorageService {
   bool cleared = false;
@@ -199,7 +199,8 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  testWidgets('city detail opens its highlighted modern reference point',
+  testWidgets(
+      'city detail opens the same custom map at its KMZ reference point',
       (tester) async {
     await tester.binding.setSurfaceSize(const Size(1200, 800));
     addTearDown(() => tester.binding.setSurfaceSize(null));
@@ -225,13 +226,20 @@ void main() {
     await tester.tap(find.text('View modern location'));
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 300));
+    await tester.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 200)));
+    await tester.pump();
     final dialog =
         tester.widget<GoogleMyMapDialog>(find.byType(GoogleMyMapDialog));
     expect(dialog.selectedCity?.id, 'jarma');
-    final modernMap = tester.widget<FlutterMap>(find.byType(FlutterMap));
-    expect(modernMap.options.initialCenter.latitude, 26.53);
-    expect(modernMap.options.initialCenter.longitude, 13.07);
-    expect(find.byType(CircleLayer), findsOneWidget);
-    expect(find.byType(MarkerLayer), findsOneWidget);
+    final container = ProviderScope.containerOf(
+        tester.element(find.byType(GoogleMyMapDialog)));
+    final reference = container.read(modernReferenceProvider).value!;
+    final uri = reference.uri(city: dialog.selectedCity);
+    expect(uri.path, '/maps/d/embed');
+    expect(uri.queryParameters['mid'], reference.mapId);
+    expect(uri.queryParameters['ll'], '26.526147,13.0760273');
+    expect(find.text('Custom map point: Germa'), findsOneWidget);
+    expect(find.byTooltip('Open custom map in browser'), findsOneWidget);
   });
 }

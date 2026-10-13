@@ -45,21 +45,23 @@ void main() {
     final cities = (jsonDecode(raw) as List<dynamic>)
         .map((value) => City.fromJson(value as Map<String, dynamic>))
         .toList();
-    expect(cities, hasLength(60));
-    expect(cities.where((city) => city.isPinned), hasLength(60));
+    expect(cities, hasLength(75));
+    expect(cities.where((city) => city.isPinned), hasLength(75));
+    expect(cities.where((city) => city.clime == 7), hasLength(15));
+    expect(cities.where((city) => city.clime == 6), isEmpty);
     for (final city in cities) {
       expect(MapCoordinates.isOnBothMaps(city.px!, city.py!), isTrue,
           reason: '${city.id} must be on both map sheets');
-      final english = MapCoordinates.forDisplay(
-          city.px!, city.py!, english: true);
-      final restored = MapCoordinates.fromDisplay(
-          english.px, english.py, english: true);
+      final english =
+          MapCoordinates.forDisplay(city.px!, city.py!, english: true);
+      final restored =
+          MapCoordinates.fromDisplay(english.px, english.py, english: true);
       expect((restored.px - city.px!).abs(), lessThan(0.00001));
       expect((restored.py - city.py!).abs(), lessThan(0.00001));
     }
   });
 
-  test('reset restores all 60 bundled pins after a saved edit', () async {
+  test('reset restores all 75 bundled pins after a saved edit', () async {
     final raw = await rootBundle.loadString('assets/data/cities.json');
     String? stored;
     final service = CityStorageService(
@@ -77,7 +79,7 @@ void main() {
     expect((await service.loadMergedCities()).first.px, 0.5);
     expect((await service.clearOverrides()).success, isTrue);
     final restored = await service.loadMergedCities();
-    expect(restored.where((city) => city.isPinned), hasLength(60));
+    expect(restored.where((city) => city.isPinned), hasLength(75));
     expect(restored.first.px, original.first.px);
     expect(restored.first.py, original.first.py);
   });

@@ -4,6 +4,7 @@ class ClimeModel {
   final String arabicName;
   final String bounds;
   final String description;
+  final String shortTitle;
 
   const ClimeModel({
     required this.number,
@@ -11,6 +12,7 @@ class ClimeModel {
     required this.arabicName,
     required this.bounds,
     required this.description,
+    this.shortTitle = '',
   });
 
   factory ClimeModel.fromJson(Map<String, dynamic> json) {
@@ -20,6 +22,7 @@ class ClimeModel {
       arabicName: json['arabicName'] as String,
       bounds: json['bounds'] as String,
       description: json['description'] as String,
+      shortTitle: json['shortTitle'] as String? ?? '',
     );
   }
 
@@ -30,6 +33,7 @@ class ClimeModel {
       'arabicName': arabicName,
       'bounds': bounds,
       'description': description,
+      'shortTitle': shortTitle,
     };
   }
 }

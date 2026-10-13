@@ -1,0 +1,459 @@
+{
+  "sourceFile": "Ikhwan_al_Safa_Climes_Journal_FINAL_V9.docx",
+  "sourceSha256": "9753c112e1d790e340a8907a0517b5cb99408dcc6944b11f8d99b942ce43e596",
+  "entries": [
+    {
+      "cityId": "jarma",
+      "journalBlock": 64,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "habasha",
+      "journalBlock": 68,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "dongola",
+      "journalBlock": 72,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "kosha",
+      "journalBlock": 76,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "chaul",
+      "journalBlock": 80,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "al_mayd",
+      "journalBlock": 84,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "uman_dhofar",
+      "journalBlock": 88,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "medina",
+      "journalBlock": 110,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "gwalior",
+      "journalBlock": 113,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "ghogha",
+      "journalBlock": 117,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "al_ghamra",
+      "journalBlock": 121,
+      "historySections": 1,
+      "retainedCatalogHistory": true
+    },
+    {
+      "cityId": "berbera",
+      "journalBlock": 123,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "debal",
+      "journalBlock": 127,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "diyar_tali",
+      "journalBlock": 130,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "yamama",
+      "journalBlock": 133,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "taif",
+      "journalBlock": 136,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "mecca",
+      "journalBlock": 139,
+      "historySections": 1,
+      "retainedCatalogHistory": true
+    },
+    {
+      "cityId": "akhmim",
+      "journalBlock": 141,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "ifriqiya",
+      "journalBlock": 144,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "bilad_samrani",
+      "journalBlock": 147,
+      "historySections": 1,
+      "retainedCatalogHistory": true
+    },
+    {
+      "cityId": "guangzhou",
+      "journalBlock": 168,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "kandahar",
+      "journalBlock": 174,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "kabul",
+      "journalBlock": 181,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "zaranj",
+      "journalBlock": 187,
+      "historySections": 1,
+      "retainedCatalogHistory": true
+    },
+    {
+      "cityId": "barqa",
+      "journalBlock": 193,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "sirjan",
+      "journalBlock": 199,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "shiraz",
+      "journalBlock": 205,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "ahvaz",
+      "journalBlock": 213,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "basra",
+      "journalBlock": 219,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "kufa",
+      "journalBlock": 226,
+      "historySections": 2,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "damascus",
+      "journalBlock": 236,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "jerusalem",
+      "journalBlock": 242,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "fustat",
+      "journalBlock": 248,
+      "historySections": 3,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "alexandria",
+      "journalBlock": 266,
+      "historySections": 1,
+      "retainedCatalogHistory": true
+    },
+    {
+      "cityId": "kairouan",
+      "journalBlock": 271,
+      "historySections": 1,
+      "retainedCatalogHistory": true
+    },
+    {
+      "cityId": "tangier",
+      "journalBlock": 276,
+      "historySections": 1,
+      "retainedCatalogHistory": true
+    },
+    {
+      "cityId": "samarkand",
+      "journalBlock": 365,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "balkh",
+      "journalBlock": 383,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "herat",
+      "journalBlock": 402,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "merv",
+      "journalBlock": 419,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "nishapur",
+      "journalBlock": 439,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "jurjan",
+      "journalBlock": 453,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "amol",
+      "journalBlock": 470,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "rayy",
+      "journalBlock": 486,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "daylam_gilan",
+      "journalBlock": 504,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "isfahan",
+      "journalBlock": 522,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "hamadan",
+      "journalBlock": 538,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "baghdad",
+      "journalBlock": 554,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "mosul",
+      "journalBlock": 572,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "aleppo",
+      "journalBlock": 589,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "rome",
+      "journalBlock": 617,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "macedonia",
+      "journalBlock": 622,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "malatya",
+      "journalBlock": 627,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "akhlat",
+      "journalBlock": 632,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "ardabil",
+      "journalBlock": 637,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "taraz",
+      "journalBlock": 642,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "bilad_khaqan",
+      "journalBlock": 646,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "khwarazm",
+      "journalBlock": 651,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "isbijab",
+      "journalBlock": 656,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "yajuj_majuj",
+      "journalBlock": 662,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "atil",
+      "journalBlock": 743,
+      "historySections": 7,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "bolghar",
+      "journalBlock": 785,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "kyiv",
+      "journalBlock": 810,
+      "historySections": 2,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "samandar",
+      "journalBlock": 837,
+      "historySections": 2,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "thule",
+      "journalBlock": 873,
+      "historySections": 1,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "saqalibah",
+      "journalBlock": 905,
+      "historySections": 2,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "khazar",
+      "journalBlock": 937,
+      "historySections": 3,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "yajuj_majuj_7",
+      "journalBlock": 975,
+      "historySections": 3,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "kimak",
+      "journalBlock": 1009,
+      "historySections": 2,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "volga_islands",
+      "journalBlock": 1038,
+      "historySections": 2,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "caspian_islands",
+      "journalBlock": 1066,
+      "historySections": 2,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "maraghah",
+      "journalBlock": 1105,
+      "historySections": 3,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "bab_al_abwab",
+      "journalBlock": 1139,
+      "historySections": 2,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "bijar",
+      "journalBlock": 1176,
+      "historySections": 3,
+      "retainedCatalogHistory": false
+    },
+    {
+      "cityId": "gothia",
+      "journalBlock": 1221,
+      "historySections": 2,
+      "retainedCatalogHistory": false
+    }
+  ],
+  "unmatchedModernCityIds": [
+    "barqa"
+  ]
+}

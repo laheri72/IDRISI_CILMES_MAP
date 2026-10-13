@@ -1,0 +1,737 @@
+{
+  "mapId": "1XMnqIQnu7SdgRlxMWgl07WWR8DMkz5w",
+  "title": "ikhwan climes",
+  "sourceFile": "ikhwan climes.kmz",
+  "sourceSha256": "16f4b61aece1d5086b2014137d20893b8e563bc0f29fdd741385ea14abaff8a1",
+  "points": [
+    {
+      "id": "clime-1-1",
+      "cityId": null,
+      "name": "Hanoi",
+      "clime": 1,
+      "latitude": 21.0277644,
+      "longitude": 105.8341598,
+      "layer": "clime 1"
+    },
+    {
+      "id": "clime-1-2",
+      "cityId": null,
+      "name": "Oc Eo",
+      "clime": 1,
+      "latitude": 10.2689158,
+      "longitude": 105.1609838,
+      "layer": "clime 1"
+    },
+    {
+      "id": "clime-1-3",
+      "cityId": null,
+      "name": "Kanniyakumari",
+      "clime": 1,
+      "latitude": 8.0843512,
+      "longitude": 77.5495019,
+      "layer": "clime 1"
+    },
+    {
+      "id": "clime-1-4",
+      "cityId": null,
+      "name": "Machilipatnam",
+      "clime": 1,
+      "latitude": 16.1808917,
+      "longitude": 81.1302716,
+      "layer": "clime 1"
+    },
+    {
+      "id": "clime-1-5",
+      "cityId": "chaul",
+      "name": "Chaul",
+      "clime": 1,
+      "latitude": 18.5802341,
+      "longitude": 72.9240317,
+      "layer": "clime 1"
+    },
+    {
+      "id": "clime-1-6",
+      "cityId": "al_mayd",
+      "name": "Keti Bandar",
+      "clime": 1,
+      "latitude": 24.1299447,
+      "longitude": 67.453141,
+      "layer": "clime 1"
+    },
+    {
+      "id": "clime-1-7",
+      "cityId": null,
+      "name": "Gwadar",
+      "clime": 1,
+      "latitude": 25.1313229,
+      "longitude": 62.3249865,
+      "layer": "clime 1"
+    },
+    {
+      "id": "clime-1-8",
+      "cityId": "jarma",
+      "name": "Germa",
+      "clime": 1,
+      "latitude": 26.526147,
+      "longitude": 13.0760273,
+      "layer": "clime 1"
+    },
+    {
+      "id": "clime-1-9",
+      "cityId": "habasha",
+      "name": "Ethiopia",
+      "clime": 1,
+      "latitude": 9.145,
+      "longitude": 40.489673,
+      "layer": "clime 1"
+    },
+    {
+      "id": "clime-1-10",
+      "cityId": "kosha",
+      "name": "Wadi Halfa",
+      "clime": 1,
+      "latitude": 21.7991419,
+      "longitude": 31.3713164,
+      "layer": "clime 1"
+    },
+    {
+      "id": "clime-1-11",
+      "cityId": "dongola",
+      "name": "Dongola",
+      "clime": 1,
+      "latitude": 19.1660279,
+      "longitude": 30.4695648,
+      "layer": "clime 1"
+    },
+    {
+      "id": "clime-1-12",
+      "cityId": "uman_dhofar",
+      "name": "Oman",
+      "clime": 1,
+      "latitude": 20.5675904,
+      "longitude": 56.1323798,
+      "layer": "clime 1"
+    },
+    {
+      "id": "clime-3-1",
+      "cityId": "guangzhou",
+      "name": "1. Arandā min al-Ṣīn (Guangzhou)",
+      "clime": 3,
+      "latitude": 23.1291,
+      "longitude": 113.2644,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-2",
+      "cityId": "kandahar",
+      "name": "2. Al-Qandahār min al-Hind (Kandahar)",
+      "clime": 3,
+      "latitude": 31.6288,
+      "longitude": 65.7372,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-3",
+      "cityId": "kabul",
+      "name": "3. Kābul min al-Hind (Kabul)",
+      "clime": 3,
+      "latitude": 34.5281,
+      "longitude": 69.1723,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-4",
+      "cityId": "zaranj",
+      "name": "4. Rūyaḥ min Sijistān (Zaranj / Sistan)",
+      "clime": 3,
+      "latitude": 30.96,
+      "longitude": 61.86,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-5",
+      "cityId": "sirjan",
+      "name": "6. Al-Sirḥān min Kermān (Sirjan)",
+      "clime": 3,
+      "latitude": 30.2839,
+      "longitude": 57.0834,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-6",
+      "cityId": "shiraz",
+      "name": "7. Shīrāz min Fārs (Shiraz)",
+      "clime": 3,
+      "latitude": 29.5926,
+      "longitude": 52.5836,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-7",
+      "cityId": "ahvaz",
+      "name": "8. Al-Ahwāz min Khūzestān (Ahvaz)",
+      "clime": 3,
+      "latitude": 31.3183,
+      "longitude": 48.6706,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-8",
+      "cityId": "basra",
+      "name": "9. Al-Baṣrah min al-'Irāq (Basra)",
+      "clime": 3,
+      "latitude": 30.5081,
+      "longitude": 47.7835,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-9",
+      "cityId": "kufa",
+      "name": "10. Al-Kūfah min al-'Irāq (Kufa)",
+      "clime": 3,
+      "latitude": 32.0298,
+      "longitude": 44.4011,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-10",
+      "cityId": "damascus",
+      "name": "11. Dimashq min al-Shām (Damascus)",
+      "clime": 3,
+      "latitude": 33.5138,
+      "longitude": 36.2765,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-11",
+      "cityId": "jerusalem",
+      "name": "12. Bayt al-Maqdis min Filasṭīn (Jerusalem)",
+      "clime": 3,
+      "latitude": 31.7683,
+      "longitude": 35.2137,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-12",
+      "cityId": "fustat",
+      "name": "13. Al-Fusṭāṭ min Miṣr (Old Cairo)",
+      "clime": 3,
+      "latitude": 30.0059,
+      "longitude": 31.2281,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-13",
+      "cityId": "alexandria",
+      "name": "14. Al-Iskandariyyah (Alexandria)",
+      "clime": 3,
+      "latitude": 31.2001,
+      "longitude": 29.9187,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-14",
+      "cityId": "kairouan",
+      "name": "15. Al-Qayrawān min al-Maghrib (Kairouan)",
+      "clime": 3,
+      "latitude": 35.6781,
+      "longitude": 10.0963,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-3-15",
+      "cityId": "tangier",
+      "name": "16. Ṭanjah min al-Maghrib (Tangier)",
+      "clime": 3,
+      "latitude": 35.7595,
+      "longitude": -5.834,
+      "layer": "Clime 3 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-1",
+      "cityId": null,
+      "name": "1. Kashgar (كاشغر)",
+      "clime": 4,
+      "latitude": 39.4704,
+      "longitude": 75.9897,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-2",
+      "cityId": null,
+      "name": "2. Nawakath / Navakat (Chuy Valley) (نفت / نواكث)",
+      "clime": 4,
+      "latitude": 42.8833,
+      "longitude": 75.0119,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-3",
+      "cityId": "samarkand",
+      "name": "3. Samarkand (سمرقند)",
+      "clime": 4,
+      "latitude": 39.6542,
+      "longitude": 66.975,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-4",
+      "cityId": "balkh",
+      "name": "4. Balkh (بلخ)",
+      "clime": 4,
+      "latitude": 36.7581,
+      "longitude": 66.8972,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-5",
+      "cityId": "herat",
+      "name": "5. Herat (هرات)",
+      "clime": 4,
+      "latitude": 34.3529,
+      "longitude": 62.204,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-6",
+      "cityId": "merv",
+      "name": "6. Merv (مرو)",
+      "clime": 4,
+      "latitude": 37.6625,
+      "longitude": 62.1856,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-7",
+      "cityId": "nishapur",
+      "name": "7. Nishapur (نيسابور)",
+      "clime": 4,
+      "latitude": 36.2133,
+      "longitude": 58.7958,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-8",
+      "cityId": "jurjan",
+      "name": "8. Gorgan / Dihistan (جرجان)",
+      "clime": 4,
+      "latitude": 36.8427,
+      "longitude": 54.4439,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-9",
+      "cityId": "amol",
+      "name": "9. Amol (آمل)",
+      "clime": 4,
+      "latitude": 36.4696,
+      "longitude": 52.3507,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-10",
+      "cityId": "rayy",
+      "name": "10. Rayy / Rey (الري)",
+      "clime": 4,
+      "latitude": 35.5901,
+      "longitude": 51.4349,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-11",
+      "cityId": "daylam_gilan",
+      "name": "11. Gilan Province / Rasht (جيلان)",
+      "clime": 4,
+      "latitude": 37.2808,
+      "longitude": 49.5832,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-12",
+      "cityId": "isfahan",
+      "name": "12. Isfahan (أصفهان)",
+      "clime": 4,
+      "latitude": 32.6546,
+      "longitude": 51.666,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-13",
+      "cityId": "hamadan",
+      "name": "13. Hamadan (همذان)",
+      "clime": 4,
+      "latitude": 34.7982,
+      "longitude": 48.5146,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-14",
+      "cityId": "baghdad",
+      "name": "14. Baghdad (بغداد)",
+      "clime": 4,
+      "latitude": 33.3152,
+      "longitude": 44.3661,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-15",
+      "cityId": "mosul",
+      "name": "15. Mosul (الموصل)",
+      "clime": 4,
+      "latitude": 36.34,
+      "longitude": 43.1189,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-4-16",
+      "cityId": "aleppo",
+      "name": "16. Aleppo (حلب)",
+      "clime": 4,
+      "latitude": 36.2021,
+      "longitude": 37.1612,
+      "layer": "Clime 4 - Ikhwan al-Safa 16 Cities"
+    },
+    {
+      "id": "clime-5-1",
+      "cityId": "rome",
+      "name": "1. Rumiya al-Kubra (رومية الكبرى من الروم)",
+      "clime": 5,
+      "latitude": 41.8833,
+      "longitude": 12.4833,
+      "layer": "Clime 5 - Ikhwan al-Safa 10 Cities"
+    },
+    {
+      "id": "clime-5-2",
+      "cityId": "macedonia",
+      "name": "2. Maqadhuniyya (ماقذونية / ماقدونية)",
+      "clime": 5,
+      "latitude": 40.6333,
+      "longitude": 22.95,
+      "layer": "Clime 5 - Ikhwan al-Safa 10 Cities"
+    },
+    {
+      "id": "clime-5-3",
+      "cityId": "malatya",
+      "name": "3. Malatya (ملطية من ارمنية)",
+      "clime": 5,
+      "latitude": 38.35,
+      "longitude": 38.3333,
+      "layer": "Clime 5 - Ikhwan al-Safa 10 Cities"
+    },
+    {
+      "id": "clime-5-4",
+      "cityId": "akhlat",
+      "name": "4. Akhlat (اخلاط من ارمنية)",
+      "clime": 5,
+      "latitude": 38.75,
+      "longitude": 42.4833,
+      "layer": "Clime 5 - Ikhwan al-Safa 10 Cities"
+    },
+    {
+      "id": "clime-5-5",
+      "cityId": "ardabil",
+      "name": "5. Ardabil (اردبيل من اذربيجان)",
+      "clime": 5,
+      "latitude": 38.25,
+      "longitude": 48.2833,
+      "layer": "Clime 5 - Ikhwan al-Safa 10 Cities"
+    },
+    {
+      "id": "clime-5-6",
+      "cityId": "taraz",
+      "name": "6. Al-Tiraz (الطراز من بلاد الترك)",
+      "clime": 5,
+      "latitude": 42.8833,
+      "longitude": 71.3667,
+      "layer": "Clime 5 - Ikhwan al-Safa 10 Cities"
+    },
+    {
+      "id": "clime-5-7",
+      "cityId": "bilad_khaqan",
+      "name": "7. Bilad Khaqan (بلاد خاقان من الترك)",
+      "clime": 5,
+      "latitude": 42.5,
+      "longitude": 78.0,
+      "layer": "Clime 5 - Ikhwan al-Safa 10 Cities"
+    },
+    {
+      "id": "clime-5-8",
+      "cityId": "khwarazm",
+      "name": "8. Khwarazm (خوارزم من وراء النهر)",
+      "clime": 5,
+      "latitude": 41.9167,
+      "longitude": 59.5833,
+      "layer": "Clime 5 - Ikhwan al-Safa 10 Cities"
+    },
+    {
+      "id": "clime-5-9",
+      "cityId": "isbijab",
+      "name": "9. Isbijab (اسبيجاب من الترك)",
+      "clime": 5,
+      "latitude": 42.3,
+      "longitude": 69.6,
+      "layer": "Clime 5 - Ikhwan al-Safa 10 Cities"
+    },
+    {
+      "id": "clime-5-10",
+      "cityId": "yajuj_majuj",
+      "name": "10. Yajuj wa Majuj (يجوج ومجوج)",
+      "clime": 5,
+      "latitude": 42.0,
+      "longitude": 91.0,
+      "layer": "Clime 5 - Ikhwan al-Safa 10 Cities"
+    },
+    {
+      "id": "clime-2-1",
+      "cityId": "ghogha",
+      "name": "1. Qura min al-Hind (قرى من الهند)",
+      "clime": 2,
+      "latitude": 21.6833,
+      "longitude": 72.2667,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-2-2",
+      "cityId": "gwalior",
+      "name": "2. Madinat fi Safh Jabal (مدينة في سفح جبل)",
+      "clime": 2,
+      "latitude": 26.2167,
+      "longitude": 78.1667,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-2-3",
+      "cityId": "al_ghamra",
+      "name": "3. al-Ghamra min al-Sind (الغمرة من السند)",
+      "clime": 2,
+      "latitude": 25.3833,
+      "longitude": 68.3667,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-2-4",
+      "cityId": "berbera",
+      "name": "4. al-Burur 'ala al-Bahr (البرور على البحر)",
+      "clime": 2,
+      "latitude": 10.4333,
+      "longitude": 45.0,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-2-5",
+      "cityId": "debal",
+      "name": "5. al-Daybul / Debal (الدميل/الديبل)",
+      "clime": 2,
+      "latitude": 24.75,
+      "longitude": 67.5167,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-2-6",
+      "cityId": "diyar_tali",
+      "name": "6. Diyar Tali minhu (ديار تلي منه)",
+      "clime": 2,
+      "latitude": 23.3833,
+      "longitude": 103.15,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-2-7",
+      "cityId": "yamama",
+      "name": "7. al-Yamama min al-Hijaz (اليمامة)",
+      "clime": 2,
+      "latitude": 24.6333,
+      "longitude": 46.7167,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-2-8",
+      "cityId": "taif",
+      "name": "8. Ta'if min al-Yaman (طائف من اليمن)",
+      "clime": 2,
+      "latitude": 21.2667,
+      "longitude": 40.4167,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-2-9",
+      "cityId": "mecca",
+      "name": "9. Makka min Tihama (مكة من تهامة)",
+      "clime": 2,
+      "latitude": 21.4167,
+      "longitude": 39.8167,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-2-10",
+      "cityId": "medina",
+      "name": "10. Yathrib Madinat al-Rasul (يثرب)",
+      "clime": 2,
+      "latitude": 24.4667,
+      "longitude": 39.6,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-2-11",
+      "cityId": "akhmim",
+      "name": "11. Akhmim min Sa'id Misr (اخميم)",
+      "clime": 2,
+      "latitude": 26.55,
+      "longitude": 31.8167,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-2-12",
+      "cityId": "ifriqiya",
+      "name": "12. Ifriqiya min al-Gharb (افريقية)",
+      "clime": 2,
+      "latitude": 35.0,
+      "longitude": 9.0,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-2-13",
+      "cityId": "bilad_samrani",
+      "name": "13. Bilad al-Samrani (بلاد السمراني)",
+      "clime": 2,
+      "latitude": 21.25,
+      "longitude": 41.4667,
+      "layer": "Clime 2 - Ikhwan al-Safa 13 Sites"
+    },
+    {
+      "id": "clime-7-1",
+      "cityId": "atil",
+      "name": "1. Ītil / Atil (إتيل / عتيل)",
+      "clime": 7,
+      "latitude": 46.35,
+      "longitude": 48.05,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-2",
+      "cityId": "bolghar",
+      "name": "2. Bulghār (بلغار)",
+      "clime": 7,
+      "latitude": 54.98,
+      "longitude": 49.05,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-3",
+      "cityId": "kyiv",
+      "name": "3. Kuyāba (كويابة)",
+      "clime": 7,
+      "latitude": 50.45,
+      "longitude": 30.52,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-4",
+      "cityId": "samandar",
+      "name": "4. Samandar (سمندر)",
+      "clime": 7,
+      "latitude": 42.98,
+      "longitude": 47.5,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-5",
+      "cityId": "thule",
+      "name": "5. Tūlī (Thule) (تولي)",
+      "clime": 7,
+      "latitude": 60.35,
+      "longitude": -1.22,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-6",
+      "cityId": "saqalibah",
+      "name": "6. Bilād al-Ṣaqālibah (بلاد الصقالبة)",
+      "clime": 7,
+      "latitude": 53.0,
+      "longitude": 28.0,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-7",
+      "cityId": "khazar",
+      "name": "7. Bilād al-Khazar (بلاد الخزر)",
+      "clime": 7,
+      "latitude": 47.5,
+      "longitude": 46.0,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-8",
+      "cityId": "yajuj_majuj_7",
+      "name": "8. Bilād Yājūj wa-Mājūj (بلاد يأجوج ومأجوج)",
+      "clime": 7,
+      "latitude": 50.0,
+      "longitude": 87.5,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-9",
+      "cityId": "kimak",
+      "name": "9. Bilād al-Kīmāk (بلاد الكيماك)",
+      "clime": 7,
+      "latitude": 52.3,
+      "longitude": 76.95,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-10",
+      "cityId": "volga_islands",
+      "name": "10. Bilād al-Jazāʾir (بلاد الجزائريين)",
+      "clime": 7,
+      "latitude": 46.33,
+      "longitude": 48.03,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-11",
+      "cityId": "caspian_islands",
+      "name": "11. Juzur Baḥr Jurjān (جزر بحر جرجان)",
+      "clime": 7,
+      "latitude": 36.9,
+      "longitude": 53.98,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-12",
+      "cityId": "maraghah",
+      "name": "12. Marāghah (مراغة)",
+      "clime": 7,
+      "latitude": 37.38,
+      "longitude": 46.23,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-13",
+      "cityId": "bab_al_abwab",
+      "name": "13. Jabal Bāb al-Abwāb (جبل باب الأبواب)",
+      "clime": 7,
+      "latitude": 42.05,
+      "longitude": 48.28,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-14",
+      "cityId": "bijar",
+      "name": "14. Bījār / Bayḥar (بيحر / بيجار)",
+      "clime": 7,
+      "latitude": 35.87,
+      "longitude": 47.6,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    },
+    {
+      "id": "clime-7-15",
+      "cityId": "gothia",
+      "name": "15. Bilād Haqṭah min al-Rūm (بلاد هقطة من الروم)",
+      "clime": 7,
+      "latitude": 43.18,
+      "longitude": 3.0,
+      "layer": "Clime 7 - Ikhwan al-Safa "
+    }
+  ]
+}

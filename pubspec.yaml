@@ -9,9 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_map: ^8.3.2
   flutter_riverpod: ^2.5.1
-  latlong2: ^0.10.1
+  web: ^1.1.1
   shared_preferences: ^2.5.5
   url_launcher: ^6.2.5
 
@@ -29,3 +28,4 @@ flutter:
     - assets/maps/tiles/en/
     - assets/data/cities.json
     - assets/data/climes.json
+    - assets/data/modern_reference.json

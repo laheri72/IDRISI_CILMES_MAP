@@ -80,8 +80,8 @@ def main() -> None:
         evidence = list(csv.DictReader(file))
     cities = json.loads(CITIES.read_text(encoding="utf-8"))
     by_id = {row["id"]: row for row in evidence}
-    if len(cities) != 60 or len(evidence) != 60 or len(by_id) != 60:
-        raise ValueError("Expected exactly 60 unique cities and evidence rows")
+    if len(cities) != len(evidence) or len(by_id) != len(evidence):
+        raise ValueError("Expected one unique evidence row per catalog record")
     if set(by_id) != {city["id"] for city in cities}:
         raise ValueError("Evidence IDs do not match bundled city IDs")
 
@@ -98,6 +98,8 @@ def main() -> None:
         if not (0 <= arabic_x <= 1 and 0 <= arabic_y <= 1) or error > 1:
             raise ValueError(f"{city['id']}: maps do not align ({error:.1f}px)")
         city["px"], city["py"] = round(arabic_x, 7), round(arabic_y, 7)
+        city["pinBasis"] = row["basis"]
+        city["pinNote"] = row["review_note"]
 
     CITIES.write_text(json.dumps(cities, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     counts = {basis: sum(row["basis"] == basis for row in evidence) for basis in ("label", "region", "estimated")}

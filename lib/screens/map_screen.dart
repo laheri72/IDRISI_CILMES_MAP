@@ -9,6 +9,7 @@ import '../theme/clime_palette.dart';
 import 'city_detail_sheet.dart';
 import 'city_list_drawer.dart';
 import 'google_map_dialog.dart';
+import 'clime_study_guide.dart';
 
 /// Main screen: an interactive, zoomable rendering of al-Idrisi's 1154 CE map
 /// with the cities of the Ikhwan al-Safa "Risalah Geographia" pinned on it.
@@ -327,7 +328,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
             style: TextStyle(color: Color(0xFFE8D3A7))),
         content: const Text(
           'This discards pin edits saved in this browser and restores all '
-          '60 bundled historical positions.',
+          'bundled historical positions.',
           style: TextStyle(color: Colors.white70),
         ),
         actions: [
@@ -845,15 +846,24 @@ class _SearchAndFilterBarState extends ConsumerState<_SearchAndFilterBar> {
           const SizedBox(height: 12),
           Row(
             children: [
-              const Text('SEVEN CLIMES',
-                  style: TextStyle(
-                      color: ClimePalette.parchment,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w800,
-                      letterSpacing: 1.6)),
-              const Spacer(),
+              const Expanded(
+                  child: Text('SEVEN CLIMES',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          color: ClimePalette.parchment,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 1.6))),
               Text('${filteredCities.length} shown',
                   style: const TextStyle(color: Colors.white70, fontSize: 12)),
+              IconButton(
+                tooltip: 'Explore clime belts',
+                icon: const Icon(Icons.layers_outlined, size: 21),
+                color: ClimePalette.parchment,
+                onPressed: () => showDialog(
+                    context: context, builder: (_) => const ClimeStudyGuide()),
+              ),
             ],
           ),
           const SizedBox(height: 7),
